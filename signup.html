@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="content">
+        <button class="back-button" onclick="goBack()">Back</button> <!-- Added back button -->
+        <div class="text">
+            Sign Up Form
+        </div>
+        <form action="login.html">
+            <div class="field">
+                <input type="text" required>
+                <span class="fas fa-user"></span>
+                <label>Name</label>
+            </div>
+            <div class="field">
+                <input type="text" required>
+                <span class="fas fa-envelope"></span>
+                <label>Email</label>
+            </div>
+            <div class="field">
+                <input type="password" required>
+                <span class="fas fa-lock"></span>
+                <label>Password</label>
+            </div>
+            <button>Sign Up</button>
+            <div class="login">
+                Already have an account? <a href="login.html">Log in</a>
+            </div>
+        </form>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

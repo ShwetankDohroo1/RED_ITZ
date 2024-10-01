@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="profile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Galdeano&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main1 main" id="main1">
+    <header class="header">
+      <div class="title">
+        <h1>RED-ITZ</h1>
+      </div>
+      <h1>Shwetank Dohroo</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" onclick="showProfile('main2')">Sidhant</a></li>
+          <li><a href="#" onclick="showProfile('main3')">Sidharth</a></li>
+          <li><a href="#" onclick="showProfile('main4')">Surya</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="profile">
+        <img class="picture" src="pics/obito.jpg" alt="Profile Picture">
+        <h2 id="profileName">Shwetank Dohroo</h2>
+        <p id="followerCount">Followers: <span id="count">0</span></p>
+        <div class="discription">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi odio ut laoreet feugiat.</p>
+        </div>
+        <ul class="social-links">
+          <li><a href="https://github.com/ShwetankDohroo1">LinkedIn</a></li>
+          <li><a href="https://www.linkedin.com/feed/">Github</a></li>
+        </ul>
+        <div class="buttons">
+          <button class="edit-button">Edit Profile</button>
+          <button class="follow-button" onclick="follow('main1')">Follow</button>
+          <button class="message-button">Message</button>
+        </div>
+      </div>
+
+
+      <div class="bookmarks">
+        <h2>Popular Posts by Shwetank Dohroo</h2>
+        <ul>
+          <li>
+            <a href=""><img src="pics/DSC_0038.JPG" alt="Post Image 1"></a>
+          </li>
+          <li>
+            <a href=""><img src="pics/DSC_0056.JPG" alt="Post Image 2"></a>
+          </li>
+          <li>
+            <a href=""><img src="pics/DSC_0097.JPG" alt="Post Image 2"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="main2 main" id="main2">
+    <header class="header">
+      <div class="title">
+        <h1>RED-ITZ</h1>
+      </div>
+      <h1>Sidhant Singh</h1>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showProfile('main1')">Shwetank</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" onclick="showProfile('main3')">Sidharth</a></li>
+          <li><a href="#" onclick="showProfile('main4')">Surya</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="profile">
+        <img class="picture" src="pics/itachi.jpeg" alt="Profile Picture">
+        <h2 id="profileName">Sidhant Singh</h2>
+        <p id="followerCount">Followers: <span id="count">0</span></p>
+        <div class="discription">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi odio ut laoreet feugiat.</p>
+        </div>
+        <ul class="social-links">
+          <li><a href="https://github.com/Sidhant-singh">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/siddhant-singh-093170253/">LinkedIn</a></li>
+        </ul>
+        <div class="buttons">
+          <button class="edit-button">Edit Profile</button>
+          <button class="follow-button" onclick="follow('main1')">Follow</button>
+          <button class="message-button">Message</button>
+        </div>
+      </div>
+
+
+      <div class="bookmarks">
+        <h2>Popular Posts by Sidhant Singh</h2>
+        <ul>
+          <li>
+            <a href=""><img src="pics/sukhoi.jpg" alt="Post Image 1"></a>
+          </li>
+          <li>
+            <a href=""><img src="pics/tank.jpeg" alt="Post Image 2"></a>
+          </li>
+          <li>
+            <a href=""><img src="pics/navySUB.webp" alt="Post Image 2"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="main3 main" id="main3">
+    <header class="header">
+      <div class="title">
+        <h1>RED-ITZ</h1>
+      </div>
+      <h1>Sidharth Patel</h1>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showProfile('main1')">Shwetank</a></li>
+          <li><a href="#" onclick="showProfile('main2')">Sidhant</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" onclick="showProfile('main4')">Surya</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="profile">
+        <img class="picture" src="pics/madara.jpg" alt="Profile Picture">
+        <h2 id="profileName">Sidharth Patel</h2>
+        <p id="followerCount">Followers: <span id="count">0</span></p>
+        <div class="discription">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi odio ut laoreet feugiat.</p>
+        </div>
+        <ul class="social-links">
+          <li><a href="#">Github</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+        <div class="buttons">
+          <button class="edit-button">Edit Profile</button>
+          <button class="follow-button" onclick="follow('main1')">Follow</button>
+          <button class="message-button">Message</button>
+        </div>
+      </div>
+
+
+      <div class="bookmarks">
+        <h2>Popular Posts by Sidharth Patel</h2>
+        <ul>
+          <li>
+            <a href=""><img src="pics/404.png" alt="Post Image 1"></a>
+          </li>
+          <li>
+            <a href=""><img src="pics/404.png" alt="Post Image 2"></a>
+          </li>
+          <li>
+            <a href=""><img src="pics/404.png" alt="Post Image 2"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="main4 main" id="main4">
+    <header class="header">
+      <div class="title">
+        <h1>RED-ITZ</h1>
+      </div>
+      <h1>Surya Dev Singh</h1>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showProfile('main1')">Shwetank</a></li>
+          <li><a href="#" onclick="showProfile('main2')">Sidhant</a></li>
+          <li><a href="#" onclick="showProfile('main3')">Sidharth</li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="profile">
+        <img class="picture" src="pics/sasuke.jpeg" alt="Profile Picture">
+        <h2 id="profileName">Surya Dev Singh</h2>
+        <p id="followerCount">Followers: <span id="count">0</span></p>
+        <div class="discription">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi odio ut laoreet feugiat.</p>
+        </div>
+        <ul class="social-links">
+          <li><a href="#">Github</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+        <div class="buttons">
+          <button class="edit-button">Edit Profile</button>
+          <button class="follow-button" onclick="follow('main1')">Follow</button>
+          <button class="message-button">Message</button>
+        </div>
+      </div>
+
+
+      <div class="bookmarks">
+        <h2>Popular Posts by Surya Dev Singh</h2>
+        <ul>
+          <li>
+            <a href=""><img src="pics/404.png" alt="Post Image 1"></a>
+          </li>
+          <li>
+            <a href=""><img src="pics/404.png" alt="Post Image 2"></a>
+          </li>
+          <li>
+            <a href=""><img src="pics/404.png" alt="Post Image 2"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+    function showProfile(profileId) {
+      var profiles = document.querySelectorAll('.main1,.main2,.main3,.main');
+      profiles.forEach(function (profile) {
+        profile.style.display = 'none';
+      });
+
+      var selectedProfile = document.getElementById(profileId);
+      selectedProfile.style.display = 'block';
+    }
+
+    var followerCounts = {
+      'main1': 0,
+      'main2': 0,
+      'main3': 0,
+      'main4': 0
+    };
+
+    function showProfile(profileId) {
+      var profiles = document.querySelectorAll('.main');
+      profiles.forEach(function (profile) {
+        profile.style.display = 'none';
+      });
+      var selectedProfile = document.getElementById(profileId);
+      selectedProfile.style.display = 'block';
+    }
+    function follow(profileId) {
+      followerCounts[profileId] = 1;
+      document.getElementById('count').innerText = followerCounts[profileId];
+    }
+  </script>
+</body>
+
+</html>

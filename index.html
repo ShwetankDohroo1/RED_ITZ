@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="utility.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="pics/server.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"  rel="stylesheet">
+    <title>RED-ITZ</title>
+    <style>
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .slide-up {
+            transform: translateY(100%);
+            transition: transform 1s ease;
+        }
+
+        .slide-up.active {
+            transform: translateY(0);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <button class="toggle-sidebar-btn">&#9776;</button>
+            <div class="title">
+                <h1>RED-ITZ</h1>
+            </div>
+            <input type="text" placeholder="Enter your text..." class="centered-input" id="searchInput">
+            <a href="login.html"><button class="login-btn">Login</button></a>
+        </div>
+        <hr class="line">
+        <div class="lower" id="lower">
+            <div class="left">
+                <div class="sidebar">
+                    <div class="sidebar-item profile" id="profile"><a href="profile.html">Our Profile</a></div>
+                    <hr class="sidebar-divider">
+                    <div class="sidebar-item home">
+                        <img class="invert" src="pics/home.svg" alt="">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <hr class="sidebar-divider">
+                    <div class="sidebar-item popular">
+                        <img class="invert" src="pics/popular.svg" alt="">
+                        Popular
+                    </div>
+                    <hr class="sidebar-divider">
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <h3>Topics</h3>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <img class="invert arrow" src="pics/down.svg" alt="">
+                    </div>
+                    <div class="dropdown-container">
+                        <a href="#">
+                            <img class="invert" src="pics/gaming.svg" alt="">
+                            Gaming
+                        </a>
+                        <a href="#">
+                            <img class="invert" src="pics/sports.svg" alt="">
+                            Sports
+                        </a>
+                        <a href="#"><img class="invert" src="pics/business.svg" alt="">Business</a>
+                        <a href="#"><img class="invert" src="pics/crypto.svg" alt="">Crypto</a>
+                        <a href="#"><img class="invert" src="pics/television.svg" alt="">Televison</a>
+                    </div>
+
+                    <hr class="sidebar-divider">
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <h3>Resources</h3>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <img class="invert arrow" src="pics/down.svg" alt="">
+                    </div>
+                    <div class="dropdown-container">
+                        <a href="#">About DO IT</a>
+                        <a href="#">Help</a>
+                        <a href="#">Advertise</a>
+
+                        <hr class="sidebar-subdivider">
+
+                        <a href="#">Communities</a>
+                        <a href="#">Best of DO IT</a>
+                        <a href="#">Topics</a>
+
+                        <hr class="sidebar-subdivider">
+
+                        <a href="#">Content Policy</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">User Agreement</a>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <h3>Popular Posts
+                            </h3>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <img class="invert arrow" src="pics/down.svg" alt="">
+                    </div>
+                    <div class="dropdown-container">
+                        <a href="#">Games</a>
+                        <a href="#">Sports</a>
+                        <a href="#">Business</a>
+                        <a href="#">Crypto</a>
+                        <a href="#">Televison</a>
+                    </div>
+                </div>
+                <hr class="line1">
+            </div>
+            <div class="right border">
+                <div class="buttons">
+                    <button class="SCR" id="prevBtn"><img src="pics/is-less-than-mathematical-sign.png" alt=""></button>
+                    <button class="SCR" id="nextBtn"><img src="pics/greater-than.png" alt=""></button>
+                </div>
+                <div class="Ppost border">
+                    <div class="pp border active">
+                        <img class="pp_img" src="pics/BSF.jpg" alt="">
+                        <div class="pp_text">Fresh violence in Manipur: BSF jawan</div>
+                    </div>
+                    <div class="pp border">
+                        <img class="pp_img" src="pics/sukhoi.jpg" alt="">
+                        <div class="pp_text">₹60,000-crore Sukhoi fighter upgrade</div>
+                    </div>
+                    <div class="pp border">
+                        <img class="pp_img" src="pics/INDIA.jpg" alt="">
+                        <div class="pp_text">India to become third-largest economy</div>
+                    </div>
+                    <div class="pp border">
+                        <img class="pp_img" src="pics/ram+mandir.jpg" alt="">
+                        <div class="pp_text">Welcoming Ram Lalla</div>
+                    </div>
+                    <div class="pp border">
+                        <img class="pp_img" src="pics/modi.jpg" alt="">
+                        <div class="pp_text">Committed to fulfil promises to farmers</div>
+                    </div>
+                    <div class="pp border">
+                        <img class="pp_img" src="pics/protests.jpg" alt="">
+                        <div class="pp_text">Amid tension over death</div>
+                    </div>
+                    <div class="pp border">
+                        <img class="pp_img" src="pics/UNITY.jpg" alt="">
+                        <div class="pp_text">38 Birds die at Statue of Unity</div>
+                    </div>
+                    <div class="pp border">
+                        <img class="pp_img" src="pics/coding.jpg" alt="">
+                        <div class="pp_text">AI Is Rewiring Coders' Brains.</div>
+                    </div>
+                </div>
+                <div class="rightbottom">
+                    <div class="posts border">
+                        <div class="_posts border">
+                            <div class="pro">
+                                <img src="pics/obito.jpg" alt="">
+                                <a href="profile.html">
+                                    <p>Shwetank Dohroo</p>
+                                </a>
+                            </div>
+                            <div class="description-container">
+                                <p class="description-text">Indian Navy's first MH-60R sub-hunter squadron soars: All
+                                    you need to know</p>
+                                <a href="#" class="read-more">Read more</a>
+                            </div>
+                            <div class="posts_img">
+                                <img src="https://bsmedia-business--standard-com.cdn.ampproject.org/ii/w820/s/bsmedia.business-standard.com/_media/bs/img/article/2024-03/07/full/1709750606-8856.jpg?im=FeatureCrop,size=(382,233)"
+                                    alt="">
+                            </div>
+                            <div class="actions">
+                                <div class="okji">
+                                    <button class="upvote-btn invert"><img src="pics/icons8-thumbs-up-30.png"
+                                            alt=""></button>
+                                    <span class="upvote-count">0</span>
+                                    <button class="downvote-btn invert"><img src="pics/icons8-thumbs-down-30.png"
+                                            alt=""></button>
+                                </div>
+                                <button class="comment-btn invert">
+                                    <img src="pics/comment.svg" alt="">
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="container1">
+                            <div class="card1">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <img src="pics/airplane.png">
+                                        <h3>International News</h3>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque
+                                            minus
+                                            iste
+                                            veritatis provident at.</p>
+                                        <a href="https://www.bbc.com/news/world">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <img src="pics/train.png">
+                                        <h3>National News</h3>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque
+                                            minus
+                                            iste
+                                            veritatis provident at.</p>
+                                        <a href="https://www.thehindu.com/news/national/">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_posts border">
+                            <div class="pro">
+                                <img src="pics/itachi.jpeg" alt="">
+                                <a href="profile.html">
+                                    <p>Sidhant Singh</p>
+                                </a>
+                            </div>
+                            <div class="description-container">
+                                <p class="description-text">'As Captain Of This Team...': Rohit Sharma Hails 'Young'
+                                    Team India In Memorable Series Triumph. Watch</p>
+                                <a href="#" class="read-more">Read more</a>
+                            </div>
+                            <div class="posts_img">
+                                <img src="https://static-toiimg-com.cdn.ampproject.org/ii/AW/s/static.toiimg.com/thumb/msid-108372082,width-400,resizemode-4/108372082.jpg"
+                                    alt="">
+                            </div>
+                            <div class="actions">
+                                <div class="okji">
+                                    <button class="upvote-btn invert"><img src="pics/icons8-thumbs-up-30.png"
+                                            alt=""></button>
+                                    <span class="upvote-count">0</span>
+                                    <button class="downvote-btn invert"><img src="pics/icons8-thumbs-down-30.png"
+                                            alt=""></button>
+                                </div>
+                                <button class="comment-btn invert">
+                                    <img src="pics/comment.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="container1">
+                            <div class="card1">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <img src="pics/shield.png">
+                                        <h3>Defence News</h3>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque
+                                            minus
+                                            iste
+                                            veritatis provident at.</p>
+                                        <a href="https://idrw.org/">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <img src="pics/science-report.png">
+                                        <h3>Science & Technology</h3>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque
+                                            minus
+                                            iste
+                                            veritatis provident at.</p>
+                                        <a href="https://scitechdaily.com/">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_posts border">
+                            <div class="pro">
+                                <img src="pics/madara.jpg" alt="">
+                                <a href="profile.html">
+                                    <p>Sidharth Patel</p>
+                                </a>
+                            </div>
+                            <div class="description-container">
+                                <p class="description-text">Sweden's NATO Membership Bid Nears Approval Amid
+                                    Geopolitical Shift:- Sweden and Finland joining NATO ...</p>
+                                <a href="#" class="read-more">Read more</a>
+                            </div>
+                            <div class="posts_img">
+                                <img src="https://c.ndtvimg.com/2019-11/t015ele8_nato-flags_625x300_27_November_19.jpg"
+                                    alt="">
+                            </div>
+                            <div class="actions">
+                                <div class="okji">
+                                    <button class="upvote-btn invert"><img src="pics/icons8-thumbs-up-30.png"
+                                            alt=""></button>
+                                    <span class="upvote-count">0</span>
+                                    <button class="downvote-btn invert"><img src="pics/icons8-thumbs-down-30.png"
+                                            alt=""></button>
+                                </div>
+                                <button class="comment-btn invert">
+                                    <img src="pics/comment.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="container1">
+                            <div class="card1">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <img src="pics/sports.png">
+                                        <h3>Sports</h3>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque
+                                            minus
+                                            iste
+                                            veritatis provident at.</p>
+                                        <a href="https://sports.ndtv.com/">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card1">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <img src="pics/circular-economy.png">
+                                        <h3>Economy</h3>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque
+                                            minus
+                                            iste
+                                            veritatis provident at.</p>
+                                        <a href="https://economictimes.indiatimes.com/markets">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_posts border">
+                            <div class="pro">
+                                <img src="pics/sasuke.jpeg" alt="">
+                                <a href="profile.html">
+                                    <p>Surya Dev</p>
+                                </a>
+                            </div>
+                            <div class="description-container">
+                                <p class="description-text">Exclusive: Why Designers Chose Asymmetric Uniform For
+                                    Gaganyaan Astronauts.:- NDTV's Science...</p>
+                                <a href="#" class="read-more">Read more</a>
+                            </div>
+                            <div class="posts_img">
+                                <img src="https://c.ndtvimg.com/2024-03/tofti3b8_astronauts-uniform_625x300_09_March_24.jpeg?im=FeatureCrop,algorithm=dnn,width=650,height=400"
+                                    alt="">
+                            </div>
+                            <div class="actions">
+                                <div class="okji">
+                                    <button class="upvote-btn invert"><img src="pics/icons8-thumbs-up-30.png"
+                                            alt=""></button>
+                                    <span class="upvote-count">0</span>
+                                    <button class="downvote-btn invert"><img src="pics/icons8-thumbs-down-30.png"
+                                            alt=""></button>
+                                </div>
+                                <button class="comment-btn invert">
+                                    <img src="pics/comment.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="pics/airplane.png">
+                                    <h3>International News</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus
+                                        iste
+                                        veritatis provident at.</p>
+                                    <a href="https://www.bbc.com/news/world">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="pics/train.png">
+                                    <h3>National News</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus
+                                        iste
+                                        veritatis provident at.</p>
+                                    <a href="https://www.thehindu.com/news/national/">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="pics/shield.png">
+                                    <h3>Defence News</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus
+                                        iste
+                                        veritatis provident at.</p>
+                                    <a href="https://idrw.org/">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="pics/science-report.png">
+                                    <h3>Science & Technology</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus
+                                        iste
+                                        veritatis provident at.</p>
+                                    <a href="https://scitechdaily.com/">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="pics/sports.png">
+                                    <h3>Sports</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus
+                                        iste
+                                        veritatis provident at.</p>
+                                    <a href="https://sports.ndtv.com/">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="pics/circular-economy.png">
+                                    <h3>Economy</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus
+                                        iste
+                                        veritatis provident at.</p>
+                                    <a href="https://economictimes.indiatimes.com/markets">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Changing background
+        const sidebarItems1 = document.querySelectorAll('.home',);
+        const sidebarItems2 = document.querySelectorAll('.popular',);
+        const lower = document.querySelector('.lower');
+
+        sidebarItems1.forEach(item => {
+            item.addEventListener('mouseover', function () {
+                lower.style.backgroundColor = '#F7DED0';
+            });
+
+            item.addEventListener('mouseout', function () {
+                lower.style.backgroundColor = '';
+            });
+        });
+        sidebarItems2.forEach(item => {
+            item.addEventListener('mouseover', function () {
+                lower.style.backgroundColor = '#EED3D9';
+            });
+
+            item.addEventListener('mouseout', function () {
+                lower.style.backgroundColor = '';
+            });
+        });
+        // DropDown Button Working
+        var dropdown = document.getElementsByClassName("dropdown");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                    dropdownContent.classList.remove("show");
+                } else {
+                    dropdownContent.style.display = "block";
+                    setTimeout(function () {
+                        dropdownContent.classList.add("show");
+                    }, 100);
+                }
+            });
+        }
+        // Next and Previous Working
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const postContainer = document.querySelector('.Ppost');
+        //left
+        prevBtn.addEventListener('click', function () {
+            postContainer.scrollTo({
+                left: postContainer.scrollLeft - 200,
+                behavior: 'smooth'
+            });
+        });
+        //right
+        nextBtn.addEventListener('click', function () {
+            postContainer.scrollTo({
+                left: postContainer.scrollLeft + 300,
+                behavior: 'smooth'
+            });
+        });
+        // Auto SlideShow JS
+        const postcontainer = document.querySelector('.Ppost');
+        const scrollStep = 200;
+        let interval;
+        function scrollAutomatically() {
+            let newScrollLeft = postcontainer.scrollLeft + scrollStep;
+            if (newScrollLeft >= postcontainer.scrollWidth - postcontainer.clientWidth) {
+                newScrollLeft = 0;
+            }
+            postcontainer.scrollTo({
+                left: newScrollLeft,
+                behavior: 'smooth'
+            });
+        }
+        function startSlideshow() {
+            interval = setInterval(scrollAutomatically, 2000);
+        }
+        postcontainer.addEventListener('mouseenter', function () {
+            clearInterval(interval);
+        });
+        postcontainer.addEventListener('mouseleave', function () {
+            startSlideshow();
+        });
+        startSlideshow();
+        // Upvote and Downvote
+        document.addEventListener("DOMContentLoaded", function () {
+            const posts = document.querySelectorAll('._posts');
+
+            posts.forEach(post => {
+                const upvoteBtn = post.querySelector('.upvote-btn');
+                const downvoteBtn = post.querySelector('.downvote-btn');
+                const upvoteCount = post.querySelector('.upvote-count');
+
+                let upvotes = 0;
+
+                upvoteBtn.addEventListener('click', function () {
+                    upvotes = 1;
+                    upvoteCount.textContent = upvotes;
+                });
+
+                downvoteBtn.addEventListener('click', function () {
+                    upvotes = 0;
+                    upvoteCount.textContent = upvotes;
+                });
+            });
+        });
+        // Opening Animation
+        document.addEventListener("DOMContentLoaded", function () {
+            const mainElement = document.querySelector('.main');
+            mainElement.classList.add('fade-in');
+
+            const slideUpElements = document.querySelectorAll('.slide-up');
+            slideUpElements.forEach(element => {
+                element.classList.add('active');
+            });
+        });
+        //seaching elements in searchbar
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById('searchInput');
+            const sidebarItems = document.querySelectorAll('.sidebar-item');
+            const dropdownItems = document.querySelectorAll('.dropdown-container a');
+            const dropdowns = document.querySelectorAll('.dropdown');
+            //add event listener to detect changes in the input field
+            searchInput.addEventListener('input', function () {
+                let searchText = searchInput.value.toLowerCase();
+                //loop through each sidebar item to check if it matches the search text
+                sidebarItems.forEach(item => {
+                    const itemText = item.textContent.toLowerCase();
+                    //if the sidebar item contains the search text, show it and open its parent dropdown
+                    if (itemText.includes(searchText)) {
+                        item.style.display = 'block';
+                    }
+                    else {
+                        item.style.display = 'none';
+                    }
+                });
+                dropdownItems.forEach(item => {
+                    let itemText = item.textContent.toLowerCase();
+                    if (itemText.includes(searchText)) {
+                        item.style.display = 'block';
+                        item.parentElement.style.display = 'block';
+                        item.parentElement.previousElementSibling.classList.add('active');
+                    }
+                    else {
+                        item.style.display = 'none';
+                    }
+                });
+                if (searchText === '') {
+                    dropdowns.forEach(dropdown => {
+                        dropdown.classList.remove('active');
+                        const dropdownContent = dropdown.nextElementSibling;
+                        dropdownContent.style.display = 'none';
+                        dropdownContent.classList.remove('show');
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
